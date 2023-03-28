@@ -1,0 +1,55 @@
+
+body{
+    position: relative;
+    
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    font-family: 'Roboto mono';
+}
+
+svg{
+    position: absolute;
+    height: auto;
+    width: 75px;
+    height: 75px;
+    bottom: 0%;
+    left: 20px;
+    z-index: 1;
+}
+
+.bg{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 70vh;
+    background-color: red;
+    z-index: -1;
+    background-image: url(../images/city-bg.jpg);
+    background-size: cover;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+}
+
+.container-mobile{
+    position: fixed;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+
+    p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        color: white;
+        padding: 0 50px;
+        font-size: 2rem;
+    }
+
+    @media (min-width: 800px){
+        display: none;
+    }
+}
